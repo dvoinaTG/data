@@ -44,12 +44,16 @@ reading comprehension. It consists of a list of questions by crowdworkers on a s
 DataPipe implementations for `version 1.1 <https://github.com/pytorch/data/blob/main/examples/text/squad1.py>`_
 is here and `version 2.0 <https://github.com/pytorch/data/blob/main/examples/text/squad2.py>`_.
 
+
+Cora Dataset as a TigerGraph database
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The Cora dataset consists of 2708 scientific publications classified into one of seven classes. The citation network consists of 5429 links. Each publication in the dataset is described by a 0/1-valued word vector indicating the absence/presence of the corresponding word from the dictionary. The dictionary consists of 1433 unique words. Here is the DataPipe implementation that imports data from TigerGraph, a native parallel graph database: https://github.com/dvoinaTG/TorchData-tutorial/blob/main/torchdata_example.ipynb
+
 Additional Datasets in TorchText
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 In a separate PyTorch domain library `TorchText <https://github.com/pytorch/text>`_, you will find some of the most
 popular datasets in the NLP field implemented as loadable datasets using DataPipes. You can find
 all of those `NLP datasets here <https://github.com/pytorch/text/tree/main/torchtext/datasets>`_.
-
 
 Vision
 -----------
